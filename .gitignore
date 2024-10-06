@@ -44,3 +44,7 @@ Thumbs.db
 # Things I don't know that got generated and
 # have no idea how to deal with.
 /functions
+.firebaserc
+.firebase.json
+.github
+.firebase
