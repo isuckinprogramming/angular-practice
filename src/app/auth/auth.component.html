@@ -1,0 +1,20 @@
+<!-- src/app/auth/auth.component.html -->
+<div class="auth-container">
+  <div *ngIf="isLoginPage; else registerTemplate">
+    <app-login-user></app-login-user>
+    <p>
+      Don't have an account?
+      <button (click)="togglePage()">Register here</button>
+    </p>
+  </div>
+
+  <ng-template #registerTemplate>
+    <app-register-user>
+
+    </app-register-user>
+    <p>
+      Already have an account?
+      <button (click)="togglePage()">Login here</button>
+    </p>
+  </ng-template>
+</div>

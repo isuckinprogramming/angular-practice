@@ -1,0 +1,79 @@
+<div class="container-fluid">
+
+    <div class="row flex-nowrap">
+
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+
+            <!-- List of Elements in Nav Bar -->
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+
+              <!-- Log Out -->
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle px-0">
+                  <i class="fs-4 bi-house"></i>
+                  <span class="ms-1 d-none d-sm-inline">
+                    Log Out
+                  </span>
+                </a>
+              </li>
+
+            <!-- Messages LIST -->
+              <li>
+                <!-- Collapsible Item Header -->
+                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-speedometer2"></i>
+                    <span class="ms-1 d-none d-sm-inline">
+                      Messages
+                    </span>
+                </a>
+
+                <!-- Collapsible Contents  -->
+                 <!-- Will use this to display the message channels -->
+                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+
+                  <li class="w-100">
+                    <a
+                      href="#"
+                      class="nav-link px-0">
+                      <span class="d-none d-sm-inline">
+                        Message Channel 1
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="nav-link px-0">
+                      <span
+                        class="d-none d-sm-inline">
+                        Message Channel 2
+                      </span>
+                   </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+        </div>
+      </div>
+
+        <div class="col py-3">
+
+          <div class="container py-5">
+
+            <!-- Chat Message Block -->
+            <div class="col-md-6 col-lg-7 col-xl-8">
+              <app-chat-dialog ></app-chat-dialog>
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+
+</div>

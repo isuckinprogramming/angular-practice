@@ -48,3 +48,9 @@ Thumbs.db
 .firebase.json
 .github
 .firebase
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json
+src/app/hiddenFirebaseCredentials.ts

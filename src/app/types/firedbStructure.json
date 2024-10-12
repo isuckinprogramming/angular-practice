@@ -1,0 +1,29 @@
+
+
+{
+  "chat-users":{
+    "user-uuid": {
+      "user-name":"",
+      "user-password":"",
+      "user-email": "",
+      "user-uuid":""
+    }
+  },
+  "chat-message-channel": {
+    "channel-uuid": {
+      "channel-uuid":"",
+      "channel-members" :"",
+      "channel-name":""
+    }
+  },
+  "chat-message-container":{
+    "channel-uuid":{
+      "chat-message-uid": {
+        "chat-message-uid":"",
+        "chat-message-content":"",
+        "chat-message-time-sent":"",
+        "chat-message-sender-user-uuid ": ""
+      }
+    }
+  }
+}

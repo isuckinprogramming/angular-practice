@@ -38,15 +38,30 @@
                 </div> -->
 
                 <div class="d-flex justify-content-center">
-                  <button  type="button" data-mdb-button-init
-                    data-mdb-ripple-init class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                  <button
+                    type="button"
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                    (click)="onSubmit()">
+                    Register
+                  </button>
                 </div>
 
-                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a
-                    class="fw-bold text-body" routerLink="login-user"><u>Login here</u></a></p>
-
               </form>
+                <p
+                  class="text-center text-muted mt-5 mb-0">
+                  <button
+                    type="button"
+                    (click)="goToLogin()"
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    data-mdb-ripple-color="light-blue"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
+                    <u>Sign Up</u>
+                  </button>
 
+                </p>
             </div>
           </div>
         </div>

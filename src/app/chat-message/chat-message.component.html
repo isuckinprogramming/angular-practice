@@ -1,0 +1,44 @@
+
+<li class="d-flex justify-content-between mb-4">
+
+  <app-messenger-user-avatar
+    *ngIf="!isUserSender"
+    [imageLocation]="senderAvatarSrc"
+    [isUserSender]="isUserSender"
+  >
+  </app-messenger-user-avatar>
+
+  <div class="card w-100">
+
+    <div
+      class="card-header d-flex justify-content-between p-3">
+      <p
+        class="fw-bold mb-0"
+        id="chat-user-message-sender">
+        {{ sender? sender: "Message Sender" }}
+      </p>
+      <p
+        class="text-muted small mb-0"
+        id="chat-message-time-since-sents">
+        <i class="far fa-clock"></i>
+        {{timeAgo ? timeAgo : 'time since message is sent' }}
+      </p>
+    </div>
+
+    <div class="card-body">
+      <p
+        class="mb-0"
+        id="chat-message-content">
+        {{ content ? content : "message content here"}}
+        <!-- Time in component{{sentTime}} -->
+      </p>
+    </div>
+  </div>
+
+  <app-messenger-user-avatar
+    *ngIf="isUserSender"
+    [imageLocation]="senderAvatarSrc"
+    [isUserSender]="isUserSender"
+  >
+  </app-messenger-user-avatar>
+</li>
